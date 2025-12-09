@@ -51,7 +51,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v5
         with:
@@ -62,7 +62,8 @@ jobs:
           git fetch --prune --unshallow
           pip install uv
           pip install pytest-mock
+          pip install pytest pytest-cov
           uv venv
           source .venv/bin/activate
           uv pip install -e . --group test
-          pytest tests
+          pytest tests --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
