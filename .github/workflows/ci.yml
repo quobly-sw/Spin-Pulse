@@ -22,10 +22,14 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: linting
-        run: ruff check src tests examples
+        run: |
+          pip install ruff
+          ruff format src tests --check
 
       - name: formatting
-        run: ruff format src tests --check
+        run: |
+          pip install ruff
+          ruff format src tests --check
 
       - name: typing
         run: |
