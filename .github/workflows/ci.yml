@@ -41,3 +41,17 @@ jobs:
         
           echo Add other actions to build,
           echo test, and deploy your project.
+
+  tests:
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: tests
+        run: |
+          git fetch --prune --unshallow
+          pip install uv
+          pip install pytest-mock
+          uv venv
+          source .venv/bin/activate
+          uv pip install -e . --group test
+          pytest tests
