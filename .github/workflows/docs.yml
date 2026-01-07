@@ -9,13 +9,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    #permissions:
-    #  pages: write
-    #  id-token: write
+    permissions:
+     pages: write
+     id-token: write
 
-    #environment:
-    #  name: github-pages
-    #  url: ${{ steps.deployment.outputs.page_url }}
+    environment:
+     name: github-pages
+     url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout repository
@@ -41,6 +41,6 @@ jobs:
         with:
           path: docs/docs_output/
 
-      #- name: Deploy to GitHub Pages
-      #  id: deployment
-      #  uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
