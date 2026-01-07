@@ -33,7 +33,7 @@ jobs:
           uv venv
           source .venv/bin/activate
           uv pip install . --group docs
-          uv sphinx-build docs/source docs/docs_output -W -b html
+          uv run sphinx-build docs/source docs/docs_output -W -b html
 
       - name: Verify Sphinx output
         run: |
