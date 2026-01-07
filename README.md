@@ -1,7 +1,6 @@
 <img src="assets/SpinPulse.png" width=200>
 
-![pipeline](https://gitlab.quobly.io/quantuminformation/quoblygatemodel/badges/main/pipeline.svg)
-![coverage](https://gitlab.quobly.io/quantuminformation/quoblygatemodel/badges/main/coverage.svg)
+![Build](https://github.com/<OWNER>/<REPO>/actions/workflows/<WORKFLOW_FILE>.yml/badge.svg)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 **`SpinPulse`** is an open-source **`python`** package for simulating spin qubit-based quantum computers at the pulse-level.
