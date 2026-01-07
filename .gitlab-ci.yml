@@ -1,0 +1,24 @@
+variables:
+  GET_SOURCES_ATTEMPTS: 3
+
+default:
+  # Official language image. Look for the different tagged releases at:
+  # https://hub.docker.com/r/library/python/tags/
+  image: python:3.13
+
+  # Caching is not enabled because uploading the cache is far too expensive
+  # and slow down CIs considerably.
+  interruptible: true
+
+include:
+  - local: ".gitlab/lint-ci.yml"
+  - local: ".gitlab/tests-ci.yml"
+  - local: ".gitlab/jupyter-test-ci.yml"
+  - local: ".gitlab/docs-ci.yml"
+  - local: ".gitlab/docs-pages.yml"
+  - local: ".gitlab/release-ci.yml"
+
+stages:
+  - lint
+  - test
+  - deploy
