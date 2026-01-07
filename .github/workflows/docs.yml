@@ -33,7 +33,13 @@ jobs:
           uv venv
           source .venv/bin/activate
           uv pip install . --group docs
-          sphinx-build docs/source docs/docs_output -W -b html
+          uv sphinx-build docs/source docs/docs_output -W -b html
+
+      - name: Verify Sphinx output
+        run: |
+          echo "Contents of docs/docs_output:"
+          ls -la docs/docs_output
+          test -f docs/docs_output/index.html
 
       - name: Upload static files as artifact
         id: artifact
