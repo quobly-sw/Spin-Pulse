@@ -13,7 +13,7 @@
 # --------------------------------------------------------------------------------------
 
 [project]
-  name = "SpinPulse"
+  name = "spin_pulse"
   description = "Quobly noise accurate simulation tool box."
   readme = "README.md"
   requires-python = ">=3.10"
@@ -34,7 +34,7 @@
     "Intended Audience :: Science/Research",
     "Operating System :: OS Independent",
   ]
-  version = "0.1"
+  dynamic = ["version"]
   dependencies = [
     "numpy>=2.1",
     "scipy",
@@ -61,10 +61,12 @@
     "jupyterlab",
     "qiskit_aer",
     "qiskit_experiments",
+    # "quimb",
   ]
   test = [
     "pytest>=8",
     "pytest-cov>=6",
+    "quimb",
   ]
   docs = [
     "pydata-sphinx-theme>=0.16",
