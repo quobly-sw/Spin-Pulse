@@ -1,0 +1,7 @@
+jupytext --to notebook --execute examples/AverageSuperoperatorsNoisyGates.py -o "docs/source/customapi/tutorials/AverageSuperoperatorsNoisyGates.ipynb"
+jupytext --to notebook --execute examples/BasicUsage.py -o "docs/source/customapi/tutorials/BasicUsage.ipynb"
+jupytext --to notebook --execute examples/BernsteinVazirani.py -o "docs/source/customapi/tutorials/BernsteinVazirani.ipynb"
+jupytext --to notebook --execute examples/ParametrizingfromQPUSpecs.py -o "docs/source/customapi/tutorials/ParametrizingfromQPUSpecs.ipynb"
+jupytext --to notebook --execute examples/QuimbSimulation.py -o "docs/source/customapi/tutorials/QuimbSimulation.ipynb"
+jupytext --to notebook --execute examples/RamseySpinEcho.py -o "docs/source/customapi/tutorials/RamseySpinEcho.ipynb"
+jupytext --to notebook --execute examples/TimeTracesExamples.py -o "docs/source/customapi/tutorials/TimeTracesExamples.ipynb"

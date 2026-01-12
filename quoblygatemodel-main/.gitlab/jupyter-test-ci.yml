@@ -1,0 +1,31 @@
+.jupiter:
+  image: python:$PYTHON_VERSION
+  before_script:
+    - git fetch --prune --unshallow
+    - pip install uv
+    - pip install pytest-mock
+    - uv venv
+    - source .venv/bin/activate
+    - uv pip install -e . --group test
+    - uv pip install qiskit-aer
+    - uv pip install quimb
+    - uv pip install jupytext
+  script:
+    - for file in examples/*.py; do
+       echo "$file" && python "$file";
+      done
+
+all_jupiter:
+  stage: test
+  timeout: 240 minutes
+  extends: .jupiter
+  variables:
+    TESTS: tests
+    KUBERNETES_MEMORY_LIMIT: "5000Mi"
+    KUBERNETES_CPU_LIMIT: "3000m"
+    KUBERNETES_CPU_REQUEST: "1500m"
+  parallel:
+    matrix:
+      - PYTHON_VERSION: ["3.13"]
+  rules: # Only at night
+      - if: '$CI_PIPELINE_SOURCE == "schedule"'
