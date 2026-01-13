@@ -18,7 +18,7 @@ You can install **SpinPulse** by running the following command from the root of 
     pip install spin-pulse
 ```
 
-For more information consult the {doc}`installation <customapi/installation/index>` page.
+For more information consult the [installation documentation](https://quobly-sw.github.io/SpinPulse/customapi/installation/index.html) page.
 
 ## API & Documentation
 
