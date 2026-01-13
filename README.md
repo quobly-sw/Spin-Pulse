@@ -1,4 +1,4 @@
-<img src="(https://github.com/quobly-sw/SpinPulse/raw/main/assets/SpinPulse.png)" width=200>
+<img src="https://github.com/quobly-sw/SpinPulse/raw/main/assets/SpinPulse.png" width=200>
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
