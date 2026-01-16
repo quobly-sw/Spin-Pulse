@@ -1,6 +1,6 @@
 # Tutorials
 
-Below are a few notebooks explain de basics of the package.
+Below are a few notebooks that explain the basics of `SpinPulse`.
 
 
 ```{toctree}

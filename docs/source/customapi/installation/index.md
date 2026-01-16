@@ -34,7 +34,7 @@ The core packages **`SpinPulse`** requires are:
 - [scipy](https://www.scipy.org/)
 - [numba](http://numba.pydata.org/)
 - [tqdm](https://github.com/tqdm/tqdm)
-- [quiskit](https://github.com/Qiskit/qiskit)
+- [qiskit](https://github.com/Qiskit/qiskit)
 
 
 **Documentation toolchain**
@@ -54,6 +54,6 @@ To update the notebooks visible in the documentation:
 **Verifying your installation**
 
 ```bash
-    from spinpulse import HardwareSpecs, PulseSequence
+    from spin_pulse import HardwareSpecs, PulseSequence
     print("SpinPulse is correctly installed.")
 ```

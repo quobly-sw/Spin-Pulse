@@ -1,6 +1,9 @@
 <img src="https://github.com/quobly-sw/SpinPulse/raw/main/assets/SpinPulse.png" width=200>
 
+[![Doc](https://img.shields.io/badge/Doc-dev-green.svg)](https://quobly-sw.github.io/SpinPulse)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![arXiv](https://img.shields.io/badge/arXiv-2601.10435-b31b1b.svg)](https://arxiv.org/abs/2601.10435)
+
 
 **`SpinPulse`** is an open-source **`python`** package for simulating spin qubit-based quantum computers at the pulse-level.
 **`SpinPulse`** models the specific physics of spin qubits, particularly through the inclusion of classical non-Markovian noise.
@@ -35,9 +38,9 @@ If you use **`SpinPulse`** in your research work, please cite our publication
       title={The SpinPulse library for transpilation and noise-accurate simulation of spin qubit quantum computers},
       author={Beno\^it Vermersch, Oscar Gravier, Nathan Miscopein, Julia Guignon, Carlos Ramos Marim\'on, Jonathan Durandau, Matthieu Dartiailh, Tristan Meunier and Valentin Savin},
       year={2026},
-      eprint={2601.XXXX},
+      eprint={2601.10435},
       archivePrefix={arXiv},
       primaryClass={quant-ph},
-      url={https://arxiv.org/abs/2601.XXXX},
+      url={https://arxiv.org/abs/2601.10435},
 }
 ```

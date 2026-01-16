@@ -5,8 +5,9 @@
 [![Documentation Status](https://readthedocs.org/projects/quimb/badge/?version=latest)]()
 [![Vermersch Paper](http://joss.theoj.org/papers/10.21105/joss.00819/status.svg)]()
 [![PyPI](https://img.shields.io/pypi/v/quimb?color=teal)]() -->
-
+[![Doc](https://img.shields.io/badge/Doc-dev-green.svg)](https://quobly-sw.github.io/SpinPulse)
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
+[![arXiv](https://img.shields.io/badge/arXiv-2601.10435-b31b1b.svg)](https://arxiv.org/abs/2601.10435)
 
 
 <!-- [`spinpulse`](https://github.com/) -->
@@ -95,10 +96,10 @@ If you use **`SpinPulse`** in your research work, please cite our publication
       title={The SpinPulse library for transpilation and noise-accurate simulation of spin qubit quantum computers},
       author={Beno\^it Vermersch, Oscar Gravier, Nathan Miscopein, Julia Guignon, Carlos Ramos Marim\'on, Jonathan Durandau, Matthieu Dartiailh, Tristan Meunier and Valentin Savin},
       year={2026},
-      eprint={2601.XXXX},
+      eprint={2601.10435},
       archivePrefix={arXiv},
       primaryClass={quant-ph},
-      url={https://arxiv.org/abs/2601.XXXX},
+      url={https://arxiv.org/abs/2601.10435},
 }
 ```
 
