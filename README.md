@@ -27,7 +27,7 @@ For more information consult the [installation documentation](https://quobly-sw.
 
 The API documentation can be found at [APIdoc](https://quobly-sw.github.io/SpinPulse/) and provides a detailed description of the **`SpinPulse`** package architecture, including its core modules, classes and functions.
 
-Detailed information on our model and the code structure is presented in our [publication]()
+Detailed information on our model and the code structure is presented in our [publication](https://arxiv.org/abs/2601.10435)
 
 ## Citing
 
