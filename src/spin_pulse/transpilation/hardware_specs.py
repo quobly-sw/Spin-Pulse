@@ -127,6 +127,13 @@ class HardwareSpecs:
         if J_coupling <= 1e-3:
             raise ValueError(f"J_coupling must be greater than 1e-3, got {J_coupling}")
 
+        if dynamical_decoupling is not None and not isinstance(
+            dynamical_decoupling, DynamicalDecoupling
+        ):
+            raise ValueError(
+                "dynamical_decoupling parameter must be None or a DynamicalDecoupling enum."
+            )
+
         fields = {"x": B_field, "y": B_field, "Heisenberg": J_coupling, "z": delta}
         self.fields: dict[str, float] = fields
 

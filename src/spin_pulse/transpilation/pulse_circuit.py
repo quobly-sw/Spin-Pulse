@@ -459,9 +459,7 @@ class PulseCircuit:
             )
         return "".join(logical_bits[::-1])
 
-    def averaging_over_samples(
-        self, f, exp_env: ExperimentalEnvironment | None = None, *args
-    ):
+    def averaging_over_samples(self, f, exp_env: ExperimentalEnvironment | None, *args):
         r"""Estimate the average value over as many noisy samples as the experimental environment
         allows it, of a user-provided function using the pulse circuit.
 
