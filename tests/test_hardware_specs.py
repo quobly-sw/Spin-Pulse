@@ -159,3 +159,17 @@ def test_invalid_hardware_specs_raises(B_field, delta, J_coupling):
             J_coupling=J_coupling,
             rotation_shape=Shape.GAUSSIAN,
         )
+
+
+def test_invalid_hardware_dynamic():
+    """Test that invalid hardware specs raise appropriate errors."""
+    with pytest.raises(ValueError):
+        HardwareSpecs(
+            num_qubits=2,
+            B_field=1.2,
+            delta=0.3,
+            J_coupling=0.7,
+            rotation_shape=Shape.GAUSSIAN,
+            coeff_duration=8,
+            dynamical_decoupling=False,
+        )
